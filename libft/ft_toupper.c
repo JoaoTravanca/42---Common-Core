@@ -1,13 +1,8 @@
-#include <unistd.h>
-void ft_toupper (char *str)
+int toupper (int c)
 {
-	while (*str)
+	if (c >= 'a' && c <= 'z' )
 	{
-		if (*str >= 'a' && *str <= 'z')
-		{
-			*str -= 32;
-		}
-		write(1, str, 1);
-		str++;
+		return c - 32;
 	}
+	return c;
 }

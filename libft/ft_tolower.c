@@ -1,12 +1,8 @@
-#include <unistd.h>
-void ft_tolower (char *str)
-{                                                                                                                               while (*str)
-        {
-                if (*str >= 'A' && *str <= 'Z')
+int ft_tolower (int c)
+
+                if (c >= 'A' && c <= 'Z')
                 {
-                        *str += 32;
-                }
-                write(1, str, 1);
-                str++;
-        }
+                        return c + 32; 
+               	}
+		return c;
 }

@@ -1,4 +1,4 @@
-int isascii (int c)
+int ft_sascii (int c)
 {
 	if (c >= 0 && c <= 127)
 	{
